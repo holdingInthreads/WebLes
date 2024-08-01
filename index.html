@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showContent('home')">Home</a></li>
+                <li><a href="#about" onclick="showContent('about')">About Me</a></li>
+                <li><a href="#contact" onclick="showContent('contact')">Contact</a></li>
+                <li><button id="toggle-dark-mode" i id="dark-mode-icon" class="fas fa-moon"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <h1>Welcome to My Website</h1>
+            <p>Hi there! This is my personal website where I share a bit about myself and how you can get in touch with me.</p>
+        </section>
+
+        <section id="about" style="display: none;">
+            <h1>About Me</h1>
+            <p>My name is [Your Name], and I am a recent graduate with a passion for web development. I enjoy creating beautiful and functional websites.</p>
+            <p>In my free time, I love to explore new technologies, read books, and spend time outdoors. I am always looking for new opportunities to grow and learn more in the field of web development.</p>
+            <p>If you'd like to know more about my work or have any questions, don't hesitate to reach out to me through the contact section.</p>
+        </section>
+
+        <section id="contact" style="display: none;">
+            <h1>Contact</h1>
+            <p>You can reach me via the following methods:</p>
+            <ul>
+                <li>Email: <a href="lesescalawork@gmail.com">your.email@example.com</a></li>
+                <li>Phone: +639099538489</li>
+
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
